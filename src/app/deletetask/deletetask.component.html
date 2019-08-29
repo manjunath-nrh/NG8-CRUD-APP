@@ -1,0 +1,8 @@
+<h2 mat-dialog-title>Delete todo</h2>
+<p>Are you sure want to delete the record?</p>
+
+<mat-dialog-actions>
+  <button mat-button (click)="onCancel()">Cancel</button>
+  <button mat-raised-button routerLink="/task" color="primary" (click)="deleteItem(passingData.id)">Yes</button>
+</mat-dialog-actions>
+
